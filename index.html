@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Hybrid Residual Reinforcement Learning on a Multi-Modal Legged Robot</title>
+        <title>Learning to Climb: Constrained Contextual Bayesian Optimisation on a Multi-Modal Legged Robot</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=1000">
         <link rel="stylesheet" href="https://use.typekit.net/quv7bsd.css"> <!-- fonts -->
@@ -25,11 +25,11 @@
             <div id="profile">
                 <!-- <img src="images/profile.jpg"> -->
                 <div id="profile-desc">
-                    <div id="profile-name">Hybrid Residual Reinforcement Learning on a Multi-Modal Legged Robot
-                        <p><br>Under review as a conference paper at ICRA 2022</p>
+                    <div id="profile-name">Learning to Climb: Constrained Contextual Bayesian Optimisation on a Multi-Modal Legged Robot
+                        <p><br>Under review as a conference paper at IROS 2022</p>
                     </div>
                     <p>
-                        <b>Abstract</b>. While quadruped robots usually have good stability and load capacity, bipedal robots offer a higher level of flexibility / adaptability to different tasks and environments. A multi-modal legged robot can take the best of both worlds. In this paper, we show a complete pipeline of design, control, and sim-to-real transfer of a multi-modal legged robot. We 1) design an additional supporting structure for a quadruped robot, 2) evaluate a class of novel hybrid learning-based algorithms combining different reinforcement learning algorithms (Twin Delayed Deep Deterministic Policy Gradients and Soft Actor Critic) and black-box parameter optimisers (Evolutionary Strategy and Bayesian Optimisation), and 3) propose a sim-to-real transfer technique. We use parameter optimisers to tune a conventional feedback controller simultaneously with the training of an RL agent that solves the residual task. Experimental results show that our proposed algorithms have the best performance in simulation and competitive performance on the real robot with our sim-to-real technique. Overall, our multi-modal robot could successfully switch between biped and quadruped, and walk in both modes.  
+                        <b>Abstract</b>. Controlling a legged robot to climb obstacles with different heights is challenging, but important for an autonomous robot to work in an unstructured environment. In this paper, we model this problem as a novel contextual constrained multi-armed bandit framework. We further propose a learning-based Constrained Contextual Bayesian Optimisation (CoCoBo) algorithm that can solve this class of problems effectively.  CoCoBo models both the reward function and constraints as Gaussian processes, incorporate continuous context space and action space into each Gaussian process, and find the next training samples through excursion search.  The experimental results show that CoCoBo is more data-efficient and safe, compared to other related state-of-the-art optimisation methods, on both synthetic test functions and real-world experiments. The real-world results—our robot could successfully learn to climb an obstacle higher than itself—reveal that our method has an enormous potential to allow self-adaptive robots to work in various terrains.   
                     </p>
                 </div>
                 <div style="clear: both;"></div>
@@ -37,11 +37,24 @@
             <div class="section paper">
                 <!-- <h1>Highlights</h1> -->
                 <p align="center">
-                <iframe width="820" height="461.25" src="https://www.youtube.com/embed/Xf-fKWNRLcc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="820" height="461.25" src="https://www.youtube.com/embed/vG7JMpr67bQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </p>
             </div>
             <br>
             <!-- <div class="divider"></div> -->
+
+            <div class="section paper">
+                <h1>Learning Process</h1>
+                <!-- <p>Under review as a conference paper at ICRA 2022<br></p> -->
+                    <!-- <font color="4e79a7">&#9733; Plenary Talk, Best Paper Presentation Award Finalist, CoRL &#9733;</font></p><br> -->
+                <img src="animation/b_movie.gif">
+                <img src="animation/f_movie.gif">
+            </div>
+            <div class="divider"></div>
+
+
+            
+            
 
             <div class="divider"></div>  
             <div class="section paper">
@@ -86,15 +99,6 @@
             </div>
             <div class="divider"></div> -->
 
-            <div class="section paper">
-                <h1>Paper</h1>
-                <p>Under review as a conference paper at ICRA 2022<br></p>
-                    <!-- <font color="4e79a7">&#9733; Plenary Talk, Best Paper Presentation Award Finalist, CoRL &#9733;</font></p><br> -->
-                <a href="files/finalfinal.pdf"><img src="images/thumbnail-half.jpg"></a>
-            </div>
-            <div class="divider"></div>
-
-
             <div class="section paper half">
                 <h1>Code</h1>
                 <p>
@@ -107,6 +111,8 @@
                 </p>
 
             </div>
+
+           
             <div class="section bibtex half">
                 <h1>Bibtex</h1>
                 <div class="code">@article{yu2021hybrid,<br>
@@ -160,7 +166,7 @@
             
             <div class="section acknowledgements">
                 <h1>Acknowledgements</h1>
-                <p>Special thanks to Jinyue Cao, Heng Zhang, Zhongwei Luo for mathematical advice; Xiaozhu Lin, Wenqing Jiang for hardware support; Zhikang Liu, Jun Gu for video shooting. </p><br><br>
+                <p>Special thanks to my computer for its hard working. </p><br><br>
                     <!-- helpful feedback on writing; Sean Snyder, Jonathan Vela, Larry Bisares, Michael Villanueva, Brandon Hurd for operations and hardware support; Robert Baruch for software infrastructure, Jared Braun for UI contributions; Erwin Coumans for PyBullet advice; Laura Graesser for video narration. -->
             </div>
             <br><br><br><br><br><br><br><br><br><br>
