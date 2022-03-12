@@ -438,12 +438,15 @@ ul {
 
 .carousel-cell {
 
-    height: 590px;
+    height: 500px;
     
   }
   
   
   .carousel-cell img {
     display: block;
+    width: 650px;
+    height: 450px;
+
 
   }

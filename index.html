@@ -41,11 +41,11 @@
                 </p>
             </div>
             <br>
-            <!-- <div class="divider"></div> -->
+            <div class="divider"></div>
 
             <div class="section paper">
                 <h1>Learning Process</h1>
-                <!-- <p>Under review as a conference paper at ICRA 2022<br></p> -->
+                <p>Visualisation of the learning process of Branin-Hoo test function from CoCoBo. We treat the first dimension of the Branin-Hoo function as state space and the second as action space; we also flip the state axis to create a variant of Branin-Hoo. The heat maps visualise the test functions and the contour lines demonstrate the constraint functions. We want to find the optimum state for every action and hence the optimum policy. We visualise the learnt policy (the pink solid line) compared with the ground-true optimum (the yellow dash line); and the training samples that are valid (white dots) and invalid (white crosses). The learnt policy successfully find the pattern of the contextual optimum and avoid the invalid regions in both test functions.<br></p>
                     <!-- <font color="4e79a7">&#9733; Plenary Talk, Best Paper Presentation Award Finalist, CoRL &#9733;</font></p><br> -->
                 <img src="animation/b_movie.gif">
                 <img src="animation/f_movie.gif">
@@ -56,36 +56,85 @@
             
             
 
-           <!--  <div class="divider"></div>  
+            <div class="divider"></div>  
             <div class="section paper">
-                <h1>Results</h1>
-                <p>Overall, standard TD3 can outperform SAC and all the parametric controllers with parameter optimisers, while our proposed hybrid methods with TD3 can even surpass the standard TD3. </p>
+                <h1>Synthetic Results</h1>
+                <p>CoCoBo clearly outperforms all the other methods with respect to average simple regret in all cases—except Hartmann3-3, where all methods report a generally high regret. </p>
                 
                 
                     <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "autoPlay": 3000, "groupCells": true, "groupCells": 1, "prevNextButtons": true, "pageDots": false, "resize": false}'>
                     <div class="carousel-cell">
                         <img class="carousel-cell-image"
-                        src="images/Sine_big.png" alt="grapes" width="600" height="600"/>
+                        src="images/synthetics/0-B11.png" alt="grapes" width="600" height="600"/>
                     </div>
                     <div class="carousel-cell">
                         <img class="carousel-cell-image"
-                        src="images/Rose_big.png" alt="grapes" width="600" height="600" />
+                        src="images/synthetics/1-FB11.png" alt="grapes" width="600" height="600" />
                     </div>
                     <div class="carousel-cell">
                         <img class="carousel-cell-image"
-                        src="images/Triangle_big.png" alt="grapes" width="600" height="600" />
+                        src="images/synthetics/2-H13.png" alt="grapes" width="600" height="600" />
                     </div>
                     <div class="carousel-cell">
                         <img class="carousel-cell-image"
-                        src="images/Line_big.png" alt="grapes" width="600" height="600" />
+                        src="images/synthetics/3-H22.png" alt="grapes" width="600" height="600" />
                     </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image"
+                        src="images/synthetics/3-H22.png" alt="grapes" width="600" height="600" />
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image"
+                        src="images/synthetics/4-H31.png" alt="grapes" width="600" height="600" />
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image"
+                        src="images/synthetics/5-H15.png" alt="grapes" width="600" height="600" />
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image"
+                        src="images/synthetics/6-H24.png" alt="grapes" width="600" height="600" />
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image"
+                        src="images/synthetics/7-H33.png" alt="grapes" width="600" height="600" />
+                    </div>
+
                 </div>
                 
             </div>
 
             <br>
             <br>
-            <div class="divider"></div> -->
+            <div class="divider"></div>
+
+            <div class="divider"></div>  
+            <div class="section paper">
+                <h1>Experimental Results</h1>
+                <p>CoCoBo reaches the highest number of total evaluations during the training process (50 steps) and consistently achieves lower or equivalent regret in each individual state than other methods.  </p>
+                
+                
+                    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "autoPlay": 3000, "groupCells": true, "groupCells": 1, "prevNextButtons": true, "pageDots": false, "resize": false}'>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image"
+                        src="images/reals/real0.png" alt="grapes" width="600" height="600"/>
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image"
+                        src="images/reals/real1.png" alt="grapes" width="600" height="600" />
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image"
+                        src="images/reals/real2.png" alt="grapes" width="600" height="600" />
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <br>
+            <br>
+            <div class="divider"></div>
 
             <!-- <div class="section paper">
                 <h1>Experimental Results</h1>
@@ -100,8 +149,8 @@
                 <p>
                     Code is available on Github. Includes:<br>
                     <!-- &nbsp;&nbsp;&bull;&nbsp;&nbsp;3D models (STL files for 3D printing and OBJ files for simulation).<br> -->
+                    &nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://github.com/Chenaah/CoCoBo/tree/botorch0.6">Training/testing code</a> (with BoTorch/Python).<br>
                     &nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://github.com/Chenaah/Cheetah-Gym">Simulation environments</a> (with PyBullet).<br>
-                    &nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://github.com/Chenaah/Cheetah-Trainer">Training/testing code</a> (with TensorFlow/Python).<br>
                     &nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://github.com/Chenaah/Cheetah-Software-RL">Program on the real robot</a> (with TensorFlow/C++).<br><br>
                     <br>
                 </p>
@@ -160,11 +209,10 @@
             </div>
             <div class="divider"></div> -->
             
-            <div class="section acknowledgements">
+            <!-- <div class="section acknowledgements">
                 <h1>Acknowledgements</h1>
                 <p>Special thanks to my computer for its hard working. </p><br><br>
-                    <!-- helpful feedback on writing; Sean Snyder, Jonathan Vela, Larry Bisares, Michael Villanueva, Brandon Hurd for operations and hardware support; Robert Baruch for software infrastructure, Jared Braun for UI contributions; Erwin Coumans for PyBullet advice; Laura Graesser for video narration. -->
-            </div>
+            </div> -->
             <br><br><br><br><br><br><br><br><br><br>
             <div class="divider"></div>
         </div>
